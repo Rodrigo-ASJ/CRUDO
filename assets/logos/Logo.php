@@ -1,4 +1,4 @@
-<svg class="h-auto w-auto" viewBox="0 0 400 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="h-auto w-auto mb-6 sm:mb-0" viewBox="0 0 400 135" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g
         class="D-logo <?php if( $_SERVER["REQUEST_URI"] == "/CRUDO/view/index.php" || $_SERVER["REQUEST_URI"] == "/CRUDO/view/")echo "text-teal-400"; ?>">
         <path

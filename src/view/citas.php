@@ -58,7 +58,8 @@
                     <button type="submit" onclick="noRefrescar(e);"
                         class="w-full sm:w-1/2 block mx-auto hover:animate-shake col-span-2 md:col-span-1 text-sm sm:text-base block px-6 h-12 uppercase font-semibold tracking-wider bg-teal-400 text-slate-900 border border-teal-400 shadow-[5.3px_4px_0px_-.6px_rgba(0,0,0,0.3)] shadow-slate-200/100">Enviar</button>
                 </form>
-                <small calss="text-sm text-center">Los campos marcados con asterisco son obligatorios</small>
+                <small class="text-sm text-center block mb-12">Los campos marcados con asterisco son
+                    obligatorios</small>
             </div>
         </div>
 

@@ -29,5 +29,3 @@ $_SESSION['icon'] = '<svg aria-hidden="true" focusable="false" data-prefix="fas"
 }else{
     echo "Error en Update";
 }
-
-?>

@@ -1,6 +1,6 @@
 <svg class="h-auto w-auto mb-6 sm:mb-0" viewBox="0 0 400 135" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g
-        class="D-logo <?php if( $_SERVER["REQUEST_URI"] == "/CRUDO/view/index.php" || $_SERVER["REQUEST_URI"] == "/CRUDO/view/")echo "text-teal-400"; ?>">
+        class="D-logo <?php if( $_SERVER["REQUEST_URI"] == "/CRUDO/src/view/index.php" || $_SERVER["REQUEST_URI"] == "/CRUDO/src/view/")echo "text-teal-400"; ?>">
         <path
             d="M300.45 25.86L323.56 18.78V74.3C324.973 74.5841 326.403 74.7812 327.84 74.89C335.84 74.89 343.84 75.25 351.77 74.8C367.89 73.91 378.42 63.05 379.39 47.22C379.84 39.94 379.66 32.76 375.76 26.05C370.51 17.05 362.93 12.05 352.53 11.34C351.669 11.1331 350.823 10.8658 350 10.54L382 0.630005C385.76 23.84 389.42 46.36 393.18 69.63L325.54 93.98C317.1 71.1 308.83 48.6 300.45 25.86Z"
             fill="currentColor" />
@@ -8,7 +8,7 @@
             d="M341.67 59.44V27.1C348.4 25.1 355.15 26.76 358.6 31.18C362.9 36.68 363.27 47.48 359.77 53.73C357.46 57.84 350.53 61.02 341.67 59.44Z"
             fill="currentColor" />
     </g>
-    <g class="U-logo <?php  if( $_SERVER["PHP_SELF"] == "/CRUDO/view/editar.php")echo "text-teal-400"; ?>">
+    <g class="U-logo <?php  if( $_SERVER["PHP_SELF"] == "/CRUDO/src/view/editar.php")echo "text-teal-400"; ?>">
         <path
             d="M210.26 73.84C214.07 58.92 217.76 44.42 221.46 29.93L221.93 30C221.93 37 221.93 44.08 221.93 51.12C222.02 62.82 226.09 72.12 237.83 76.56C249.33 80.87 260.16 79.41 269.38 71.19C274.51 66.61 276.6 60.19 276.63 53.27C276.68 42.67 276.63 32.07 276.63 21.47V15.84L298.46 23.04C287.46 46.87 276.69 70.23 265.75 93.94L210.26 73.84Z"
             fill="currentColor" />
@@ -17,7 +17,7 @@
             fill="currentColor" />
     </g>
     <g
-        class="R-log <?php if( $_SERVER["REQUEST_URI"] == "/CRUDO/view/index.php" || $_SERVER["REQUEST_URI"] == "/CRUDO/view/" )echo "text-teal-400"; ?>">
+        class="R-log <?php if( $_SERVER["REQUEST_URI"] == "/CRUDO/src/view/index.php" || $_SERVER["REQUEST_URI"] == "/CRUDO/src/view/" )echo "text-teal-400"; ?>">
         <path
             d="M144.89 80.21H161.65V61.53L162.58 61.15L176.35 80.31L144.79 93.94C135.4 78.5 126.24 63.44 116.79 47.94L144.86 32.7L144.89 80.21Z"
             fill="currentColor" />
@@ -28,7 +28,7 @@
             d="M162.25 45.66V30.45C167.45 30 172.46 28.85 176.15 33.54C177.115 34.8818 177.641 36.4896 177.655 38.1423C177.67 39.7951 177.172 41.4117 176.23 42.77C173.81 46.24 169.44 47.21 162.25 45.66Z"
             fill="currentColor" />
     </g>
-    <g class="C-logo <?php if( $_SERVER["REQUEST_URI"] == "/CRUDO/view/citas.php")echo "text-teal-400"; ?>">
+    <g class="C-logo <?php if( $_SERVER["REQUEST_URI"] == "/CRUDO/src/view/citas.php")echo "text-teal-400"; ?>">
         <path
             d="M115.3 94.59L82.35 89.75L81.73 89C92.92 82.4 100.42 73.16 103.73 60.17H80.39C79.77 61.23 79.13 62.36 78.46 63.48C70.46 76.83 52.77 78.28 42.71 66.4C33.65 55.7 34.93 38.1 45.42 29.22C47.9024 27.0724 50.8419 25.519 54.0149 24.6781C57.1878 23.8372 60.5108 23.7309 63.731 24.3673C66.9513 25.0036 69.984 26.3658 72.5987 28.3504C75.2133 30.3349 77.341 32.8896 78.82 35.82C79.27 36.69 79.74 37.56 80.33 38.68H103C102.78 29.17 96.26 20.4 80.18 8.16L115.3 0V94.59Z"
             fill="currentColor" />

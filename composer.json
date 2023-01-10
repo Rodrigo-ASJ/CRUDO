@@ -1,0 +1,21 @@
+{
+    "name": "rodrigofernandez/crudo",
+    "autoload": {
+        "psr-4": {
+            "Rodrigofernandez\\Crudo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rodrigo",
+            "email": "rodrigo@asmalljob.com"
+        }
+    ],
+    "autoload-dev": {
+        "psr-4": {
+          "Rodrigofernandez\\test\\Crudo\\": "test/"
+        }},
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}

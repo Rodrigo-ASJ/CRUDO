@@ -15,7 +15,13 @@ function conectar(){
     //* Crear un DSN (data source name)
     $dsn = "mysql:host=$hostname;dbname=$dbname";
 
-    $db = new PDO($dsn, $username, $password);
+    try{
+        $db = new PDO($dsn, $username, $password);
+        return $db;
+    }catch(Exception $e){
+        echo $e->getMessage();
+    }
+    
     
  /* metodo con MySQLi   
     // conectar con el servidor
@@ -25,7 +31,7 @@ function conectar(){
     mysqli_select_db($con,$dbname); 
 */
 
-    return $db;
+ 
        
 }
 

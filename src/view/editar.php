@@ -40,7 +40,7 @@ $row = $query->fetch(PDO::FETCH_ASSOC);
         <h1 class="mb-6 text-xl text-teal-500 ">Realizar cambios en: <span
                 class="text-slate-200 underline decoration-teal-500"><?= $row['nombre'] ?></span>
         </h1>
-        <form class="w-full lg:w-1/2 mb-4 block bg-slate-900 border border-slate-500 px-4 py-6" id="myform"
+        <form class="mb-14 w-full lg:w-1/2 mb-4 block bg-slate-900 border border-slate-500 px-4 py-6" id="myform"
             action="../controller/update.php" method="POST">
 
             <!-- importante enviar este campo para poder hacer match en update.php -->
@@ -84,7 +84,7 @@ $row = $query->fetch(PDO::FETCH_ASSOC);
                     class="ease-in duration-200 hover:shadow-teal-400/100 hover:bg-slate-200 hover:text-slate-900 hover:border-slate-200 text-sm  block px-6 h-12 uppercase font-semibold tracking-wider border border border-slate-500  text-slate-200 shadow-[5.3px_4px_0px_-.6px_rgba(0,0,0,0.3)] shadow-slate-200/100"
                     onclick="limpiar(event);">Limpiar campos</button>
                 <a class="ease-in duration-200 hover:shadow-slate-200/100 hover:bg-teal-400 hover:text-slate-900 hover:border-teal-400 px-6 h-12 flex items-center uppercase font-semibold tracking-wider text-sm border border-slate-500  text-slate-200 shadow-[5.3px_4px_0px_-.6px_rgba(0,0,0,0.3)] shadow-teal-400/100"
-                    href="/CRUDO/view/index.php">Cancelar edición</a>
+                    href="/CRUDO/src/view/index.php">Cancelar edición</a>
             </div>
         </form>
     </main>

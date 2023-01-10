@@ -1,4 +1,7 @@
-<?php include("../model/conexion.php");?>
+<?php
+namespace App;
+
+include("../model/conexion.php");?>
 <!DOCTYPE html>
 <html lang="en">
 

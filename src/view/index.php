@@ -1,4 +1,7 @@
 <?php 
+namespace App;
+use PDO;
+
 
 include("../model/conexion.php");
 $db = conectar();

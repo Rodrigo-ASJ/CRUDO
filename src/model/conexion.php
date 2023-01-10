@@ -1,4 +1,9 @@
 <?php
+
+namespace App;
+use PDO;
+use Exception;
+
 //crear una session
 session_start();
 

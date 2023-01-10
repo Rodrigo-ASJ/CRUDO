@@ -1,4 +1,6 @@
 <?php 
+namespace App;
+
 
 include("../model/conexion.php");
 $db = conectar();

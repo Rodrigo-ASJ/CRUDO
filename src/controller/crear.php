@@ -1,4 +1,6 @@
 <?php
+namespace App;
+
 
 //* Llamar a la base de datos
 include("../model/conexion.php");

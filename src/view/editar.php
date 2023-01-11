@@ -1,9 +1,11 @@
 <?php
-namespace App;
-use PDO;
 
+
+use App\model\conexion;
 include("../model/conexion.php");
-$db = conectar();
+$con = new Conexion;
+$db = $con->conectar();
+
 
 //* Capturar la query enviada por el href del anchor por la url
 $id = $_GET['id']; 
@@ -81,7 +83,7 @@ $row = $query->fetch(PDO::FETCH_ASSOC);
 
             <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
                 <button
-                    class="mb-3 md:mb-0 hover:animate-shake col-span-2 md:col-span-1 text-sm sm:text-base block px-6 h-12 uppercase font-semibold tracking-wider bg-teal-400 text-slate-900 border border-teal-400 shadow-[5.3px_4px_0px_-.6px_rgba(0,0,0,0.3)] shadow-slate-200/100"
+                    class="mb-3 md:mb-0 hover:animate-shake col-span-2 md:col-span-1 text-sm  block px-6 h-12 uppercase font-semibold tracking-wider bg-teal-400 text-slate-900 border border-teal-400 shadow-[5.3px_4px_0px_-.6px_rgba(0,0,0,0.3)] shadow-slate-200/100"
                     type="submit">Actualizar</button>
                 <button
                     class="ease-in duration-200 hover:shadow-teal-400/100 hover:bg-slate-200 hover:text-slate-900 hover:border-slate-200 text-sm  block px-6 h-12 uppercase font-semibold tracking-wider border border border-slate-500  text-slate-200 shadow-[5.3px_4px_0px_-.6px_rgba(0,0,0,0.3)] shadow-slate-200/100"

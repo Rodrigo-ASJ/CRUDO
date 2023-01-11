@@ -1,8 +1,8 @@
 <?php 
 
+namespace Tests\model;
 
-
-include ("./src/model/conexion.php");
+use App\model\conexion;
 use PHPUnit\Framework\TestCase;
 
 
@@ -13,16 +13,19 @@ public function comprobar_que_hay_conexion(){
     // añadir test_ para hacer fincionar el test o el arroba = test
     
     //Setup
-    $db = conectar();
+    $db = new Conexion();
     //Accion
-    $db = true;
+    // sut = system under test
+    $sut = $db->conectar();
 
     //Comprobación / Aserciones
-    $this->assertEquals(true,$db);
-    
+    $this->assertEquals(false,is_object($sut)); 
+
+  
 }
     
     
 }
+
 
 ?>

@@ -1,8 +1,10 @@
 <?php
-namespace App;
-
+namespace App\controller;
+use App\model\conexion;
 include("../model/conexion.php");
-$db= conectar();
+$con = new Conexion;
+$con->getSession();
+$db = $con->conectar();
 
 //* mapear las columnas de un registro y rellenar las variables con los enviado por el formulario de editar.php
 $id = $_POST['id'];

@@ -1,10 +1,13 @@
 <?php
-namespace App;
+namespace App\controller;
 
 
 //* Llamar a la base de datos
-include("../model/conexion.php");
-$db = conectar();
+use App\model\conexion;
+include("../model/conexion.php"); 
+$con = new Conexion;
+$con->getSession();
+$db = $con->conectar();
 
 //* capturar los datos enviados por el metodo HTTP POST del formulario con el $_POST
 $nombre = $_POST['nombre'];  

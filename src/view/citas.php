@@ -1,7 +1,10 @@
 <?php
-namespace App;
 
-include("../model/conexion.php");?>
+use App\model\conexion;
+include("../model/conexion.php"); 
+$session = new Conexion;
+$session->getSession();
+?>
 <!DOCTYPE html>
 <html lang="en">
 

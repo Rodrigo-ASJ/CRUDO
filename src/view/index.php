@@ -1,10 +1,10 @@
 <?php 
-namespace App;
-use PDO;
+use App\model\conexion;
+include("../model/conexion.php"); 
 
-
-include("../model/conexion.php");
-$db = conectar();
+$con = new Conexion;
+$con->getSession();
+$db = $con->conectar();
 $sql = "SELECT * FROM problemas";
 $query = $db->query($sql);
 $listados = $query->fetchAll(PDO::FETCH_ASSOC);

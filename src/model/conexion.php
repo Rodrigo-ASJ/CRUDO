@@ -1,45 +1,50 @@
 <?php
 
-namespace App;
+namespace App\model;
 use PDO;
 use Exception;
 
-//crear una session
-session_start();
-
-function conectar(){
-
-   // Database setup:
-    $hostname = "localhost";
-    $dbname = "CRUDO";
+class Conexion {
     
-    //* permisos
-    $username  = "root";
-    $password = "";
     
-    //* Crear un DSN (data source name)
-    $dsn = "mysql:host=$hostname;dbname=$dbname";
-
-    try{
-        $db = new PDO($dsn, $username, $password);
-        return $db;
-    }catch(Exception $e){
-        echo $e->getMessage();
+    private $hostname, $dbname, $username, $password, $dsn;   
+    
+    public function __construct(){
+        
+        
+        // Database setup:
+         $this->hostname = "localhost";
+         $this->dbname = "CRUDO";
+         
+         //* permisos
+         $this->username  = "root";
+         $this->password = "";
+         
+         //* Crear un DSN (data source name)
+         $this->dsn = "mysql:host=$this->hostname;dbname=$this->dbname";
+        
     }
     
-    
- /* metodo con MySQLi   
-    // conectar con el servidor
-    $con = mysqli_connect($hostname,$username,$password);
-    
-    // ingresar en la base de datos
-    mysqli_select_db($con,$dbname); 
-*/
 
- 
-       
+    /**
+     * @method conectar
+     * @return object
+     */
+
+    public function conectar(){
+        try{
+            $db = new PDO($this->dsn, $this->username, $this->password);
+            return $db;
+        }catch(Exception $e){
+            echo $e->getMessage();
+        }
+      }
+
+
+      public function getSession(){
+        //crear una session
+        return session_start();
+      }
+
 }
-
-
-
 ?>

@@ -1,9 +1,10 @@
 <?php 
-namespace App;
-
-
+namespace App\controller;
+use App\model\conexion;
 include("../model/conexion.php");
-$db = conectar();
+$con = new Conexion;
+$con->getSession();
+$db = $con->conectar();
 
 //* capturar el valor enviado por la URL desde el achor con la query id
 $id = $_GET['id'];

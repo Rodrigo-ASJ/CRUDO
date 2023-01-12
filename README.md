@@ -3,6 +3,8 @@
 <hr style="background:#2dd4bf;"/>
 <p>Aplicación que permite pedir cita a los desrrolladores para resolver problemas técnicos de los equipos de desarrollo.</p>
 
+![Drag Racing](./src/assets/imagenes/Captura.png)
+
 ## Requerimientos
 
 

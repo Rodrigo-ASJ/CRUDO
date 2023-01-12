@@ -1,7 +1,6 @@
 <?php
 namespace App\controller;
 
-
 //* Llamar a la base de datos
 use App\model\conexion;
 include("../model/conexion.php"); 

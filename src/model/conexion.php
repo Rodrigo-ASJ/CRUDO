@@ -10,8 +10,7 @@ class Conexion {
     private $hostname, $dbname, $username, $password, $dsn;   
     
     public function __construct(){
-        
-        
+           
         // Database setup:
          $this->hostname = "localhost";
          $this->dbname = "CRUDO";
